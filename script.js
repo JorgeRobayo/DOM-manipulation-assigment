@@ -1,3 +1,5 @@
+
+
 let quotes = [
   `I live my life a quarter mile at a time`,
   `I said a ten-second car, not a ten-minute car`,
@@ -17,17 +19,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+  const mainEl = document.querySelector("#main-title")
+  mainEl.textContent = 'Pactice DOM'
 
   // Part 2
-
+  const bodyEl = document.querySelector('body')
+  bodyEl.style.backgroundColor = 'pink'
 
   // Part 3
-
+  // const favEl = document.querySelector('#favorite-things')
+  const favEl = document.querySelector('li:last-child')
+  favEl.parentElement.removeChild(favEl)
 
   // Part 4
-
-
+  const specialEl = document.querySelectorAll('.special-title')
+  specialEl.forEach((element)=>
+  element.style.fontSize = '2rem')
+  
   // Part 5
 
 
